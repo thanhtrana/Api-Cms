@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Project Path="Cms.WebApp/Cms.WebApp.csproj" />
+  <Project Path="src/Cms.Api/Cms.Api.csproj" />
+  <Project Path="src/Cms.Core/Cms.Core.csproj" />
+  <Project Path="src/Cms.Data/Cms.Data.csproj" />
+</Solution>
