@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,13 +9,13 @@ namespace Cms.Core.Domain.Content
     public class Post
     {
         [Key]
-        public Guid Id { get; set; }
+        public long Id { get; set; }
         public string Name { get; set; }
         public string Slug { get; set; }
         public string Description { get; set; }
-        public Guid CategoryId { get; set; }
+        public long CategoryId { get; set; }
         public string Content { get; set; }
-        public Guid AuthorUserId { get; set; }
+        public long AuthorUserId { get; set; }
         public string Thumbnail { get; set; }
         public string Source { get; set; }
         public string SeoDescription { get; set; }
@@ -26,10 +26,10 @@ namespace Cms.Core.Domain.Content
         public int Status { get; set; }
         public bool IsPaid { get; set; }
         public decimal RoyaltyMoney { get; set; }
-        public Guid CreatedBy { get; set; }
+        public long? CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
-        public Guid UpdatedBy { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public long? UpdatedBy { get; set; }
+        public DateTime? UpdatedDate { get; set; }
     }
 
     public class PostStatus

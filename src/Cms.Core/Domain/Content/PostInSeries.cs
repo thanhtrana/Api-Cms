@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -10,14 +10,14 @@ namespace Cms.Core.Domain.Content
     public class PostInSeries
     {
         [Key]
-        public Guid Id { get; set; }
-        public Guid SeriesId { get; set; }
-        public Guid PostId { get; set; }
+        public long Id { get; set; }
+        public long SeriesId { get; set; }
+        public long PostId { get; set; }
         public int DisplayOrder { get; set; }
         public int SortOrder { get; set; }
-        public Guid CreatedBy { get; set; }
+        public long? CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
-        public Guid UpdatedBy { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public long? UpdatedBy { get; set; }
+        public DateTime? UpdatedDate { get; set; }
     }
 }

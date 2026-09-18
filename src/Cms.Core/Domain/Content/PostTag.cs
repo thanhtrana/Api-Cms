@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -10,10 +10,10 @@ namespace Cms.Core.Domain.Content
     public class PostTag
     {
         [Key]
-        public Guid Id { get; set; }
-        public Guid PostId { get; set; }
-        public Guid TagId { get; set; }
-        public Guid CreatedBy { get; set; }
+        public long Id { get; set; }
+        public long PostId { get; set; }
+        public long TagId { get; set; }
+        public long? CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
     }
 }

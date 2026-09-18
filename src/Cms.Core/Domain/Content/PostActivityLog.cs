@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Cms.Core.Domain.Content
@@ -7,9 +7,9 @@ namespace Cms.Core.Domain.Content
     public class PostActivityLog
     {
         [Key]
-        public Guid Id { get; set; }
-        public Guid PostId { get; set; }
-        public Guid UserId { get; set; }
+        public long Id { get; set; }
+        public long PostId { get; set; }
+        public long UserId { get; set; }
         public PostStatus FromStatus { get; set; }
         public PostStatus ToStatus { get; set; }
         public string ActivityType { get; set; }
